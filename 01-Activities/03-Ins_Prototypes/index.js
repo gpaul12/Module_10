@@ -7,9 +7,11 @@ function Dog(name, age, breed) {
 }
 
 Dog.prototype.nap = function () {
-  console.log('Zzzzzzzzz');
+  console.log(this.name + " says....Zzzzzzzzz");
 };
 
-const dog = new Dog('Rex', 2, 'Bulldog');
+const dog = new Dog("Rex", 2, "Bulldog");
+const dog2 = new Dog("Fido", 7, "Labador");
 
 dog.nap();
+dog2.nap();
