@@ -11,12 +11,13 @@ function Dog(name, age, breed) {
   this.age = age;
   this.breed = breed;
   this.nap = function () {
-    console.log('Zzzzzzzzz');
+    console.log("Zzzzzzzzz");
   };
 }
 
 // Sets the variable "dog" to a Dog object and initializes with name, age, and breed properties
-const dog = new Dog('Rex', 2, 'Bulldog');
+const dog = new Dog("Rex", 2, "Bulldog");
 
+console.log(dog);
 // Calling dog's nap method
 dog.nap();
