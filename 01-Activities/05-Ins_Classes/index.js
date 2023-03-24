@@ -7,13 +7,13 @@ class Cat {
   }
 
   nap() {
-    console.log('Zzzzzzzzz');
+    console.log(this.name + " says...Zzzzzzzzz");
   }
 }
 
 // Sets the variables "catOne" and "catTwo" to a Cat object and initializes with name, age, and breed properties
-const catOne = new Cat('Tom', 2, 'Shorthair');
-const catTwo = new Cat('Garfield', 3, 'Bengal');
+const catOne = new Cat("Tom", 2, "Shorthair");
+const catTwo = new Cat("Garfield", 3, "Bengal");
 
 // Calling Cat's nap method
 catOne.nap();
