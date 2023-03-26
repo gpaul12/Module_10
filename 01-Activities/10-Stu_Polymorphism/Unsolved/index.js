@@ -29,20 +29,25 @@ class Comment extends ForumItem {
     super(authorName, text, createdOn);
     this.reaction = reaction;
   }
+  printMetaData() {
+    console.log(
+      `Created by ${this.authorName} on ${this.createdOn} ...${this.reaction}`
+    );
+  }
 }
 
 const newPost = new BlogPost(
-  'John Doe',
-  'My Fourth Post',
-  'Dogs, cats, and snakes are super cute!',
-  '12/19/2021'
+  "John Doe",
+  "My Fourth Post",
+  "Dogs, cats, and snakes are super cute!",
+  "12/19/2021"
 );
 
 const newComment = new Comment(
-  'Jane Doe',
-  'This post is really awesome!',
-  '12/20/2021',
-  '🐶😺🐍'
+  "Jane Doe",
+  "This post is really awesome!",
+  "12/20/2021",
+  "🐶😺🐍"
 );
 
 newPost.printMetaData();
