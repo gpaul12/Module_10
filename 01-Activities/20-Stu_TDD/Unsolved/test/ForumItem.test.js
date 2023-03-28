@@ -1,9 +1,10 @@
-const ForumItem = require('../lib/ForumItem.js');
+const ForumItem = require("../lib/ForumItem.js");
 
-describe('ForumItem', () => {
+describe("ForumItem", () => {
   // Add a comment describing this test.
-  describe('Instantiate', () => {
-    it('should be an instance of ForumItem class', () => {
+  // Testing an instance of ForumItem class
+  describe("Instantiate", () => {
+    it("should be an instance of ForumItem class", () => {
       const forumitem = new ForumItem();
 
       expect(forumitem).toBeInstanceOf(ForumItem);
@@ -11,9 +12,10 @@ describe('ForumItem', () => {
   });
 
   // Add a comment describing this test.
-  describe('Initialize authorName', () => {
-    it('should set authorName properly', () => {
-      const authorName = 'Jack Doe';
+  // Testing authorName is set properly
+  describe("Initialize authorName", () => {
+    it("should set authorName properly", () => {
+      const authorName = "Jack Doe";
       const forumitem = new ForumItem(authorName);
 
       expect(forumitem.authorName).toBe(authorName);
@@ -21,22 +23,24 @@ describe('ForumItem', () => {
   });
 
   // Add a comment describing this test.
-  describe('Initialize text', () => {
-    it('should set text properly', () => {
-      const text = 'This is some random text';
-      const forumitem = new ForumItem('Jack Doe', text);
+  // Testing text is set properly
+  describe("Initialize text", () => {
+    it("should set text properly", () => {
+      const text = "This is some random text";
+      const forumitem = new ForumItem("Jack Doe", text);
 
       expect(forumitem.text).toBe(text);
     });
   });
 
   // Add a comment describing this test.
-  describe('Initialize createdOn', () => {
-    it('should set createdOn properly', () => {
-      const createdOn = '12/15/2021';
+  // Testing createdOn is set properly
+  describe("Initialize createdOn", () => {
+    it("should set createdOn properly", () => {
+      const createdOn = "12/15/2021";
       const forumitem = new ForumItem(
-        'Jack Doe',
-        'This is some random text',
+        "Jack Doe",
+        "This is some random text",
         createdOn
       );
 
@@ -45,12 +49,13 @@ describe('ForumItem', () => {
   });
 
   // Add a comment describing this test.
-  describe('printMetaData() method', () => {
-    it('should print message with data', () => {
+  // Testing the print message with data is set properly
+  describe("printMetaData() method", () => {
+    it("should print message with data", () => {
       const forumitem = new ForumItem(
-        'Jack Doe',
-        'This is some random text',
-        '12/15/2021'
+        "Jack Doe",
+        "This is some random text",
+        "12/15/2021"
       );
 
       expect(forumitem.printMetaData()).toBe(

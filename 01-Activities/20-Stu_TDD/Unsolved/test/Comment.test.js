@@ -1,9 +1,10 @@
-const Comment = require('../lib/Comment.js');
+const Comment = require("../lib/Comment.js");
 
-describe('Comment', () => {
+describe("Comment", () => {
   // TODO: Add a comment describing this test.
-  describe('Instantiate', () => {
-    it('should be an instance of Comment class', () => {
+  // Testing the insatnce of Comment class
+  describe("Instantiate", () => {
+    it("should be an instance of Comment class", () => {
       const comment = new Comment();
 
       expect(comment).toBeInstanceOf(Comment);
@@ -11,9 +12,10 @@ describe('Comment', () => {
   });
 
   // TODO: Add a comment describing this test.
-  describe('Initialize authorName', () => {
-    it('should set authorName properly', () => {
-      const authorName = 'Jane Doe';
+  // Testing authorName is set properly
+  describe("Initialize authorName", () => {
+    it("should set authorName properly", () => {
+      const authorName = "Jane Doe";
       const comment = new Comment(authorName);
 
       expect(comment.authorName).toBe(authorName);
@@ -21,22 +23,24 @@ describe('Comment', () => {
   });
 
   // TODO: Add a comment describing this test.
-  describe('Initialize text', () => {
-    it('should set text properly', () => {
-      const text = 'This post is super cool!';
-      const comment = new Comment('Jane Doe', text);
+  // Testing text is set properly
+  describe("Initialize text", () => {
+    it("should set text properly", () => {
+      const text = "This post is super cool!";
+      const comment = new Comment("Jane Doe", text);
 
       expect(comment.text).toBe(text);
     });
   });
 
   // TODO: Add a comment describing this test.
-  describe('Initialize createdOn', () => {
-    it('should set createdOn properly', () => {
-      const createdOn = '12/15/2021';
+  // Testing createdOn is set properly
+  describe("Initialize createdOn", () => {
+    it("should set createdOn properly", () => {
+      const createdOn = "12/15/2021";
       const comment = new Comment(
-        'Jane Doe',
-        'This post is super cool!',
+        "Jane Doe",
+        "This post is super cool!",
         createdOn
       );
 
@@ -45,13 +49,15 @@ describe('Comment', () => {
   });
 
   // TODO: Add a comment describing this test.
-  describe('Initialize reaction', () => {
-    it('should set reaction properly', () => {
-      const reaction = '🐶';
+  // Testing reaction is set properly
+
+  describe("Initialize reaction", () => {
+    it("should set reaction properly", () => {
+      const reaction = "🐶";
       const comment = new Comment(
-        'Jane Doe',
-        'This post is super cool!',
-        '12/15/2021',
+        "Jane Doe",
+        "This post is super cool!",
+        "12/15/2021",
         reaction
       );
 
@@ -60,13 +66,15 @@ describe('Comment', () => {
   });
 
   // TODO: Add a comment describing this test.
-  describe('printMetaData() method', () => {
-    it('should print message with data', () => {
+  // Testing the print message is set properly
+
+  describe("printMetaData() method", () => {
+    it("should print message with data", () => {
       const comment = new Comment(
-        'Jane Doe',
-        'This post is super cool!',
-        '12/15/2021',
-        '🐶'
+        "Jane Doe",
+        "This post is super cool!",
+        "12/15/2021",
+        "🐶"
       );
 
       expect(comment.printMetaData()).toBe(
